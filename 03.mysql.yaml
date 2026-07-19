@@ -1,5 +1,5 @@
 - name: configuring mysql server
-  hosts: mongodb
+  hosts: mysql
   become: yes
   tasks:
   - name: install mysql server
