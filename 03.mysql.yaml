@@ -1,0 +1,13 @@
+- name: configuring mysql server
+  hosts: mongodb
+  become: yes
+  tasks:
+  - name: install mysql server
+    package:
+      name: mysql-server
+      state: present
+  - name: start mysql service
+    service:
+      name: mysqld
+      state: started
+      enabled: yes
