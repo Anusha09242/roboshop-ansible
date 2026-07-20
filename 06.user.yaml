@@ -39,3 +39,15 @@
   - name: install dependencies
     npm:
       path: /app
+  - name: copy user service
+    template:
+      src: user.service.j2
+      dest: /etc/systemd/system/user.service
+  - name: daemon daemon_reload
+    systemd_service:
+      daemon_reload: true
+  - name: start and enable user
+    service:
+      name: user
+      state: restarted
+      enabled: yes
