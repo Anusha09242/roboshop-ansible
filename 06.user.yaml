@@ -50,4 +50,4 @@
     service:
       name: user
       state: restarted
-      enabled: true
+      enabled: yes
