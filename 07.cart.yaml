@@ -45,6 +45,7 @@
       dest: /etc/systemd/system/cart.service
   - name: daemon daemon_reload
     systemd_service:
+      name: cart
       daemon_reload: true
   - name: start and enable cart
     service:

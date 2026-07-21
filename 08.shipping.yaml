@@ -64,7 +64,16 @@
     loop:
     - /app/db/schema.sql
     - /app/db/app-user.sql
-    - /app/db/master-data.sql   
+    - /app/db/master-data.sql 
+  - name: daemon daemon_reload
+    systemd_service:
+      name: shipping
+      daemon_reload: true
+  - name: start and enable shipping
+    service:
+      name: shipping
+      state: restarted
+      enabled: yes  
   
 
 

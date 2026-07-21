@@ -45,6 +45,7 @@
       dest: /etc/systemd/system/user.service
   - name: daemon daemon_reload
     systemd_service:
+      name: user
       daemon_reload: true
   - name: start and enable user
     service:
