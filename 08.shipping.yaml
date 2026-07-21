@@ -58,7 +58,6 @@
     package: 
       name: mysql
       state: present
-  - name: check schema exists or not
 
 
 
