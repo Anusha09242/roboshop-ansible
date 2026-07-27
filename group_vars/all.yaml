@@ -5,3 +5,5 @@ REDIS_HOST: redis.anu90.shop
 CATALOGUE_HOST: catalogue.anu90.shop
 CART_HOST: cart.anu90.shop
 MYSQL_HOST: mysql.anu90.shop
+RABBITMQ_HOST: rabbitmq.anu90.shop
+USER_HOST: user.anu90.shop
