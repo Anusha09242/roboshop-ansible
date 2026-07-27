@@ -47,7 +47,7 @@
     systemd_service:
       name: user
       daemon_reload: true
-  - name: start and enable user
+  - name: restart and enable user
     service:
       name: user
       state: restarted

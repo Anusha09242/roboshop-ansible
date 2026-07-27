@@ -47,7 +47,7 @@
     systemd_service:
       name: cart
       daemon_reload: true
-  - name: start and enable cart
+  - name: restart and enable cart
     service:
       name: cart
       state: restarted
